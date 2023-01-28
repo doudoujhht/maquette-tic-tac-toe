@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700&display=swap');
+body{
+    background-color: #1A2A33;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Outfit', serif;
+    overflow: hidden;
+}
+
+.menu{
+    display: grid;
+    grid-template-columns: repeat(3, 140px);
+    grid-template-rows: 54px;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    margin-top: 20px;
+    align-items: center;
+}
+.imgContainer{
+    display: flex;
+    gap: 8px;
+}
+.imgContainer img{
+    width: 32px;
+    height: 32px;
+}
+.turn{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 1px;
+    color: #A8BFC9;
+    background: #1F3641;
+    box-shadow: inset 0 -4px 0 #10212A;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    height: 100%;
+}
+.turn img{
+    width: 20px;
+    height: 20px;
+}
+.restart{
+    display: flex;
+    justify-content: end;
+}
+.restart div{
+    width: 52px;
+    height: 52px;
+    background: #A8BFC9;
+    box-shadow: inset 0 -4px 0 #6B8997;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 140px);
+    grid-template-rows: repeat(3, 140px);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    margin-top: 20px;
+}
+.grid div{
+    background: #1F3641;
+    box-shadow: inset 0 -8px 0 #10212A;
+    border-radius: 15px;
+}
+.scores{
+    display: grid;
+    grid-template-columns: repeat(3, 140px);
+    grid-template-rows: 72px;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    margin-top: 20px;
+}
+.scores div{
+    text-align: center;
+    border-radius: 15px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.scores div p{
+    font-weight: 500;
+    margin: 0;
+}
+.scores div h1{
+    font-weight: 700;
+    margin: 0;
+    font-size: 24px;
+}
+.you{
+    background: #31C3BD;
+}
+.ties{
+    background: #A8BFC9;
+}
+.cpu{
+    background: #F2B137;
+}
